@@ -1,0 +1,58 @@
+.my-wrap{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.nav-header{
+  flex-shrink: 0;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height:80px;
+  background-color: pink;
+  padding: 0 5px;
+}
+.btn-default:active:focus, .btn-default:active:hover{
+  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.btn:active:focus, .btn:focus{
+  outline: none;
+}
+.nav-header h3{
+  margin: 0;
+  color: #666;
+  font-weight: bold;
+}
+.nav-header button{
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: #666;
+}
+
+
+.main{
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+
+
+.nav-footer{
+  display: flex;
+  justify-content: space-around;
+  flex-shrink: 0;
+  height: 80px;
+  background-color: pink;
+  align-items: center;
+}
+.nav-footer a{
+  color: #666;
+  font-size: 18px;
+  text-align: center;
+  border-right: 2px solid #fff;
+  flex-grow: 1;
+}
+.nav-footer a:last-child{
+  border: none;
+}
