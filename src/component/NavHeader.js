@@ -1,13 +1,16 @@
 import React from 'react';
 
-class NevHeader extends React.Component {
+class NavHeader extends React.Component {
+  handleBack(){
+    this.context.router.goBack();
+  }
   render () {
     return(
       <div className="nav-header">
-        <button type="button" className="btn btn-default" aria-label="Left Align">
+        <button type="button" className="btn btn-default" aria-label="Left Align" onClick={this.handleBack.bind(this)}>
         <span className="glyphicon glyphicon-align-justify" aria-hidden="true"></span>BACK
         </button>
-        <h3>liuxicui@HOME</h3>
+        <h3>liuxicui@{this.props.title}</h3>
         <button type="button" className="btn btn-default" aria-label="Left Align">
         <span className="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
         </button>
@@ -15,5 +18,7 @@ class NevHeader extends React.Component {
     )
   }
 }
-
-export default NevHeader;
+NavHeader.contextTypes = {
+  router: React.PropTypes.object
+};
+export default NavHeader;

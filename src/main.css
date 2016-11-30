@@ -29,15 +29,11 @@
   border: none;
   color: #666;
 }
-
-
 .main{
+  display: flex;
   flex-grow: 1;
   overflow-y: scroll;
 }
-
-
-
 .nav-footer{
   display: flex;
   justify-content: space-around;
@@ -55,4 +51,42 @@
 }
 .nav-footer a:last-child{
   border: none;
+}
+.home-wrap{
+  display: flex;
+  flex-grow: 1;
+  background-image: url(./images/me.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.home-cover{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+  flex-grow: 1;
+  align-items: center;
+}
+.home-item{
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+.btn-default:active:focus, .btn-default:active:hover{
+  background-color: pink;
+}
+.about-wrap{
+  flex-grow: 1;
+  padding: 10px;
+}
+.git-card{
+  width: 100%;
+  border: 1px solid #666;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 6px;
+  padding: 10px;
+}
+.about-form{
+  display: inline;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 90%;
 }
