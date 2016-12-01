@@ -12,7 +12,7 @@ class NavHeader extends React.Component {
         </button>
         <h3>liuxicui@{this.props.title}</h3>
         <button type="button" className="btn btn-default" aria-label="Left Align">
-        <span className="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+        <span className="glyphicon glyphicon-qrcode" aria-hidden="true"></span>
         </button>
       </div>
     )
