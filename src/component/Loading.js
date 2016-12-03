@@ -5,7 +5,7 @@ class Lodaing extends React.Component {
 
   render () {
     return(
-      <div>
+      <div style={{textAlign:'center'}}>
         <CircularProgress color='pink' size={30}/>
       </div>
     )

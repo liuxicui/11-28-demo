@@ -5,6 +5,8 @@ import Home from './Home/index';
 import Blog from './Blog/index';
 import About from './About/index';
 import Work from './Work/index';
+import NoMatch from './component/NoMatch';
+import Item from './Item/index';
 
 
 class Routers extends React.Component {
@@ -16,6 +18,8 @@ class Routers extends React.Component {
           <Route path="about" component={About} />
           <Route path="blog" component={Blog} />
           <Route path="work" component={Work} />
+          <Route path="Item/:title" component={Item} />
+          <Route path="*" component={NoMatch} />
         </Route>
       </Router>
     )
