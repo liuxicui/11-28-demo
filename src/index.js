@@ -3,6 +3,7 @@ import {render} from 'react-dom';
 
 import Routers from './routes.js';
 import './main.css';
+import 'highlight.js/styles/arta.css';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
