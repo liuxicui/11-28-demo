@@ -22,7 +22,7 @@ class App extends React.Component {
       title:this.props.router.isActive('/',true) ? 'Home' :
             this.props.router.isActive('/blog') ? 'Blog' :
             this.props.router.isActive('/about') ? 'About' :
-            this.props.router.isActive('/work') ? 'Work' : 'Item'
+            this.props.router.isActive('/work') ? 'Work' : 'Blog'
     })
   }
   render () {
