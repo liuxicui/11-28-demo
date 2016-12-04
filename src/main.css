@@ -3,6 +3,33 @@
   flex-direction: column;
   height: 100vh;
 }
+@media(min-width:760px) {
+  .my-wrap{
+    flex-direction: row;
+  }
+  .my-wrap h3{
+    border-bottom: 2px solid #666;
+    margin: 0;
+    padding: 20px 0;
+  }
+  .leftnav-wrap{
+    width: 260px;
+    background-color: pink;
+    text-align: center;
+
+  }
+  .leftnav-wrap a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .leftnav-wrap a:hover{
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+}
 .nav-header{
   flex-shrink: 0;
   display:flex;
