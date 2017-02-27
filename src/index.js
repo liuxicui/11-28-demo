@@ -1,10 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
-
-import Routers from './routes.js';
+import App from './App';
 import './main.css';
-import 'highlight.js/styles/arta.css';
-import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin();
 
-render(<Routers />,document.getElementById('root'));
+
+
+render(<App />,document.getElementById('root'));
